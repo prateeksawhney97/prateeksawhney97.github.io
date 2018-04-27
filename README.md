@@ -1,2 +1,2 @@
-# prateeksawhney97.github.io
-Prateek Sawhney
+# Prateek Sawhney
+prateeksawhney97.github.io
