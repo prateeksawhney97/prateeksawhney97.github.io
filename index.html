@@ -1,16 +1,707 @@
+
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Prateek Sawhney</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dew. - Personal Portfolio</title>
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+	<!-- CSS PLUGIN -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+	<link rel="stylesheet" href="assets/css/aos.css">
+
+	<!-- MAIN STYLE -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- RESPONSIVES STYLE -->
+	<link rel="stylesheet" href="assets/css/style-responsives.css">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:600|Lato:300,400" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
 
-<h2>Version 2.0 in progress.....</h2>
-  <h2>In the mean time, check version 1.0 <a href="https://www.prateeksawhney.me/prateeksawhney" target="_blank">here</a></h2>
-  <h3><a href="https://www.prateeksawhney.me/prateeksawhney" target="_blank">prateeksawhney.me/prateeksawhney</a></h3>
+	<!-- PRELOADER-->
+	<div id="preloader">
+		<div id="status">
+			<div class="loader-revolve center">
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- END PRELOADER -->
+
+	<!-- NAVIGATION -->
+	<div id="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="logo">
+						<a href="index.html">Dew.</a>
+					</div>
+				</div>
+
+				<div class="col-sm-9">
+					<div class="navigation-menu">
+						<div class="navbar">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar-collapse collapse">
+								<ul class="nav navbar-nav navbar-right">
+									<!-- navigation menu items -->
+									<li>
+										<a class="line active smoth-scroll" href="#home">Home</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#about">About</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#portfolio">Portfolio</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#services">Services</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#testimonial">Testimonial</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#blog">Blog</a>
+									</li>
+									<li>
+										<a class="line smoth-scroll" href="#contact">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END NAVIGATION -->
+
+	<!-- HOME -->
+	<div id="home" class="home-bg box-intro" data-stellar-background-ratio="0.6">
+		<div class="overlay">
+			<a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=T2Y0LDASIyo', showControls:false, autoPlay:true, zoom:0, loop:true, mute:false, startAt:0, opacity:1, quality:'default'}"></a>
+			<div class="display-table">
+				<div class="display-table-cell">
+					<div class="container">
+						<div class="row">
+							<div class="home-text">
+								<!-- profile picture -->
+								<div class="profile-pic" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+									<img src="assets/img/me.jpg" height="500" class="img-responsive" alt="" />
+								</div>
+
+								<!-- home title -->
+								<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+									<h1>Hi, I'm James William</h1>
+									<h3 id="text-rotator">
+										<div>Web Designer</div>
+										<div>UI Designer</div>
+										<div>Front-End Developer</div>
+									</h3>
+								</div>
+							</div>
+
+							<!-- arrow button -->
+							<a class="smoth-scroll" href="#about">
+								<i class="fa fa-angle-down arrow"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END HOME -->
+
+	<!-- ABOUT -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="description col-md-6 col-sm-4 col-xs-12">
+					<h2>Hello, I am James</h2>
+
+					<h4>Web Developer from Ireland</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc.
+						Fusce sit amet interdum metus, a interdum massa. Nullam gravida, elit sed mattis semper, libero leo convallis mi, et
+						elementum magna tortor sed tortor. Aliquam hendrerit metus non enim fringilla, eu molestie ante bibendum.
+					</p>
+
+					<!-- social media items -->
+					<ul class="social-icons">
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-behance"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-dribbble"></i>
+							</a>
+						</li>
+					</ul>
+
+					<!-- about button -->
+					<p>
+						<a href="#" class="btn btn-dark with-arrow smoth-scroll">My Resume
+							<i class="fa fa-download"></i>
+						</a>
+					</p>
+				</div>
+
+				<!-- facts counting -->
+				<div class=" facts col-md-5 col-sm-5 col-xs-12">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller" data-slno='1' data-min='0' data-max='300' data-delay='10' data-increment="5">300</div>
+								<div class="count-name-intro">Project done</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller" data-slno='1' data-min='0' data-max='500' data-delay='10' data-increment="5">500</div>
+								<div class="count-name-intro">Cups of coffe</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller" data-slno='1' data-min='0' data-max='120' data-delay='10' data-increment="5">120</div>
+								<div class="count-name-intro">Clients</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller" data-slno='1' data-min='0' data-max='10' data-delay='1' data-increment="1">10</div>
+								<div class="count-name-intro">Awards</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END ABOUT -->
+
+	<!-- SKILLS -->
+	<section id="skills">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>My Skills</h2>
+				</div>
+
+				<!-- skills items -->
+				<div class="col-md-5 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p>PHP
+							<span class="color-heading pull-right">87%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="87"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-5 col-sm-6 col-xs-12 skills-right">
+					<div class="progress-box">
+						<p>HTML5
+							<span class="color-heading pull-right">96%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="96"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-5 col-sm-6 col-xs-12">
+					<div class="progress-box">
+						<p>JavaSript
+							<span class="color-heading pull-right">52%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="52"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-5 col-sm-6 col-xs-12 skills-right">
+					<div class="progress-box">
+						<p>Photoshop
+							<span class="color-heading pull-right">77%</span>
+						</p>
+						<div class="progress">
+							<div class="progress-bar bg-color-base" role="progressbar" data-width="77"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END SKILLS -->
+
+	<!-- PORTFOLIO -->
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div data-aos="fade-up">
+					<div class="col-md-12 text-center">
+						<h2>Selected Project</h2>
+					</div>
+
+					<div class="col-md-12 col-sm-12">
+						<!-- portfolio menu -->
+						<div class="filter-btn col-md-12 text-center">
+							<div class="filter active" data-filter="all">All</div>
+							<div class="filter" data-filter=".website">Website</div>
+							<div class="filter" data-filter=".photography">Photography</div>
+							<div class="filter lst-cld" data-filter=".design">Design</div>
+						</div>
+
+						<!-- portfolio items -->
+						<div id="port-image" class="container">
+							<div class="row">
+								<div class="website grid mix col-md-4 col-sm-6 col-xs-12">
+									<a href="assets/img/portfolio/portfolio-1.jpg" class="image-popup">
+										<figure class="port-desc">
+											<img src="assets/img/portfolio/portfolio-1.jpg" class="img-responsive" alt="Work 1">
+											<figcaption>
+												<h4>Project One</h4>
+												<h5>Website</h5>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+
+								<div class="website grid mix col-md-4 col-sm-6 col-xs-12">
+									<a href="assets/img/portfolio/portfolio-2.jpg" class="image-popup">
+										<figure class="port-desc">
+											<img src="assets/img/portfolio/portfolio-2.jpg" class="img-responsive" alt="Work 1">
+											<figcaption>
+												<h4>Project Two</h4>
+												<h5>Website</h5>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+
+								<div class="photography grid mix col-md-4 col-sm-6 col-xs-12">
+									<a href="assets/img/portfolio/portfolio-3.jpg" class="image-popup">
+										<figure class="port-desc">
+											<img src="assets/img/portfolio/portfolio-3.jpg" class="img-responsive" alt="Work 1">
+											<figcaption>
+												<h4>Project Three</h4>
+												<h5>Photography</h5>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+
+								<div class="photography grid mix col-md-4 col-sm-6 col-xs-12">
+									<a href="assets/img/portfolio/portfolio-4.jpg" class="image-popup">
+										<figure class="port-desc">
+											<img src="assets/img/portfolio/portfolio-4.jpg" class="img-responsive" alt="Work 1">
+											<figcaption>
+												<h4>Project Four</h4>
+												<h5>Photography</h5>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+
+								<div class="design grid mix col-md-4 col-sm-6 col-xs-12">
+									<a href="assets/img/portfolio/portfolio-5.jpg" class="image-popup">
+										<figure class="port-desc">
+											<img src="assets/img/portfolio/portfolio-5.jpg" class="img-responsive" alt="Work 1">
+											<figcaption>
+												<h4>Project Five</h4>
+												<h5>Design</h5>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+
+								<div class="design grid mix col-md-4 col-sm-6 col-xs-12">
+									<a href="assets/img/portfolio/portfolio-6.jpg" class="image-popup">
+										<figure class="port-desc">
+											<img src="assets/img/portfolio/portfolio-6.jpg" class="img-responsive" alt="Work 1">
+											<figcaption>
+												<h4>Project Six</h4>
+												<h5>Design</h5>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END PORTFOLIO -->
+
+	<!-- SERVICES -->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Services</h2>
+				</div>
+
+				<div class="col-md-12">
+					<div class="row">
+						<!-- services items -->
+						<div class="col-md-4 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-cubes fa-2x"></i>
+								<h4>Web Design</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-flask fa-2x"></i>
+								<h4>UI</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-heart fa-2x"></i>
+								<h4>Front End</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-diamond fa-2x"></i>
+								<h4>UX Design</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-wordpress fa-2x"></i>
+								<h4>Wordpress</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="services-item">
+								<i class="fa fa-bolt fa-2x"></i>
+								<h4>SEO</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END SERVICES -->
+
+	<!-- HIRE -->
+	<section id="hire">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-sm-6 col-xs-12">
+					<h2>Hire Me</h2>
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc. Fusce
+						sit amet interdum metus, a interdum massa.
+					</p>
+				</div>
+
+				<!-- button -->
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<p>
+						<a href="#contact" class="btn btn-dark btn-lg smoth-scroll">Get in Touch</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END HIRE-->
+
+	<!-- TESTIMONIAL -->
+	<section id="testimonial" class="testimonial-slider text-center" style="background-image: url('assets/img/bg.jpg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="flexslider">
+						<ul class="slides">
+							<!-- testimoni items -->
+							<li>
+								<p class="author">John Pagiyai SH, Product Designer.</p>
+								<h2>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis ipsum et ante tempor imperdiet. Sed eleifend metus
+									et nisl scelerisque, ut convallis sapien facilisis."
+								</h2>
+							</li>
+
+							<li>
+								<p class="author">Yong Lek, Founder Abidas.</p>
+								<h2>"Morbi et vulputate orci. Nullam in venenatis risus. Aliquam nec orci elit. Sed dapibus eleifend enim, sed imperdiet
+									lacus eleifend quis. Nullam mollis, quam ac convallis semper."
+								</h2>
+
+							</li>
+
+							<li>
+								<p class="author">Bung Fefe, Actor</p>
+								<h2>"Cras blandit rutrum justo tincidunt iaculis. Ut purus sem, facilisis eget urna quis, commodo tempus ligula. Morbi
+									sagittis, erat sed imperdiet mattis, libero libero sodales."
+								</h2>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END TESTIMONIAL -->
+
+	<!-- BLOG -->
+	<section id="blog">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Blog Post</h2>
+				</div>
+
+				<!-- blog items -->
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a href="single.html" class="blog-img">
+							<img src="assets/img/blog/blog-1.jpg" class="img-responsive" alt="Blog 1">
+						</a>
+						<div class="blog-desc">
+							<h4>
+								<a href="single.html">Lorem ipsum dolor sit amet</a>
+							</h4>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<a href="single.html" class="btn btn-dark">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a href="single.html" class="blog-img">
+							<img src="assets/img/blog/blog-2.jpg" class="img-responsive" alt="Blog 2">
+						</a>
+						<div class="blog-desc">
+							<h4>
+								<a href="single.html">Lorem ipsum dolor sit amet</a>
+							</h4>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<a href="single.html" class="btn btn-dark">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a href="single.html" class="blog-img">
+							<img src="assets/img/blog/blog-3.jpg" class="img-responsive" alt="Blog 3">
+						</a>
+						<div class="blog-desc">
+							<h4>
+								<a href="single.html">Lorem ipsum dolor sit amet</a>
+							</h4>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<a href="single.html" class="btn btn-dark">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END BLOG -->
+
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Contact Me</h2>
+				</div>
+
+				<div class="address-icons col-md-8 col-md-offset-2">
+					<div class="col-md-4 col-sm-4">
+						<i class="fa fa-envelope-o fa-2x"></i>
+						<p>dew@email.com</p>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<i class="fa fa-map-marker fa-2x"></i>
+						<p>Banguntapan,
+							<br> Yogyakarta, ID 55198
+						</p>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<i class="fa fa-phone fa-2x"></i>
+						<p>+62 123 456 7890</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="col-md-8 col-md-offset-2">
+					<!--changes contact email in file mailer.php -->
+					<form id="contact-form" name="contact" method="post">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea name="message" id="message" class="form-control" rows="4" placeholder="Message..." required></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+
+						<div class="col-md-12 col-xs-12">
+							<button id="submit" type="submit" name="submit" class="btn btn-dark">Send Message</button>
+						</div>
+
+						<div id="success" class="col-md-12 col-xs-12">
+							<p class="green textcenter">Your message was send, Thank you.</p>
+						</div>
+
+						<div id="error" class="col-md-12 col-xs-12">
+							<p>Something maybe wrong please try again</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CONTACT -->
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="col-md-12 text-center">
+				<ul class="social-icons-footer">
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-behance"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-dribbble"></i>
+						</a>
+					</li>
+				</ul>
+
+				<p>© 2018 Dew. made by vavelo</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+
+	<!-- JS PLUGIN -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/text-rotate.js"></script>
+	<script src="assets/js/numscroller.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/jquery.wow.min.js"></script>
+	<script src="assets/js/jquery.appear.js"></script>
+	<script src="assets/js/masonry/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/progress-bar.min.js"></script>
+	<script src="assets/js/jquery.mixitup.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/magnific-popup-options.js"></script>
+	<script src="assets/js/jquery.flexslider-min.js"></script>
+	<script src="assets/js/aos.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/jquery.form.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+	<script type="text/javascript">
+		$('.player').mb_YTPlayer();
+	</script>
+
+	<!-- MAIN JS -->
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
