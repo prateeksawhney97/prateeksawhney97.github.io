@@ -390,13 +390,10 @@
 											</figcaption>
 										</figure>
 										</div>
-										<script>
-										// When the user clicks on div, open the popup
-										function myFunctionOne() {
+										<script>function myFunctionOne() {
 	    							var popup = document.getElementById("myPopup");
 	    							popup.classList.toggle("show");
-										}
-										</script>
+										}</script>
 								</div>
 
 								<div class="website grid mix col-md-4 col-sm-6 col-xs-12">
@@ -425,7 +422,8 @@
 							</div>
 
 								<div class="website grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="assets/img/portfolio/portfolio-4.png" class="image-popup">
+									<div class="popup" onclick="myFunctionFour()">
+										<span class="popuptext" id="myPopup">Implementing a 2-class Classification Neural Network with a Single Hidden Layer.</span>
 										<figure class="port-desc">
 											<img src="assets/img/portfolio/portfolio-4.png" class="img-responsive" alt="Work 1">
 											<figcaption>
@@ -433,7 +431,11 @@
 												<h5><a href="https://github.com/prateeksawhney97/Planar-Data-Classification-with-One-Hidden-Layer" target="_blank"><b>GitHub</b></a></h5>
 											</figcaption>
 										</figure>
-									</a>
+									</div>
+									<script>function myFunctionFour() {
+									var popup = document.getElementById("myPopup");
+									popup.classList.toggle("show");
+									}</script>
 								</div>
 
 
