@@ -379,9 +379,8 @@
 						<div id="port-image" class="container">
 							<div class="row">
 								<div class="website grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="index.html" title="Description"
- 										onclick="window.open(this.href,'nom_Popup','​height=400 , width=400 ,location=no ,resizable=yes ,scrollbars=yes');return false;">
-										<figure class="port-desc">
+									<div class="popup" onclick="myFunctionOne()">
+									<figure class="port-desc">
 											<img src="assets/img/portfolio/portfolio-1.png" class="img-responsive" alt="Work 1">
 											<figcaption>
 												<h4>Self Driving Car</h4>
@@ -389,7 +388,15 @@
 												<h5><a href="https://www.youtube.com/watch?v=fINs6V63EJQ&t=129s" target="_blank"><b>Youtube</b></a></h5>
 											</figcaption>
 										</figure>
-									</a>
+										<span class="popuptext" id="myPopup">Implemented a Convolutional Network for end-to-end driving in a simulator using Tensorflow and Keras.</span>
+									</div>
+									<script>
+									// When the user clicks on div, open the popup
+									function myFunctionOne() {
+    							var popup = document.getElementById("myPopup");
+    							popup.classList.toggle("show");
+									}
+									</script>
 								</div>
 
 								<div class="website grid mix col-md-4 col-sm-6 col-xs-12">
