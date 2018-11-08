@@ -1,10 +1,10 @@
 $(function () {
 
 	// Get the form.
-	var form = $('#contact-form');
+	var form = $('#ajax-contact');
 
 	// Get the messages div.
-	var formMessages = $('#form-group');
+	var formMessages = $('#form-messages');
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function (e) {
