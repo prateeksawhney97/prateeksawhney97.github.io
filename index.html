@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="assets/css/flexslider.css">
 	<link rel="stylesheet" href="assets/css/aos.css">
 	<link rel="stylesheet" href="assets/css/popup.css">
+	<link rel="stylesheet" href="assets/css/form-style.css">
 
 	<!-- MAIN STYLE -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -750,11 +751,8 @@
 					</div>
 					<div class="clearfix"></div>
 				</div>
-
+				<!--
 				<div class="col-md-8 col-md-offset-2">
-					<!--changes contact email in file mailer.php -->
-
-					<div id="form-messages"></div>
 
 					<form id="ajax-contact" name="contact" method="post" action="mailer.php">
 						<div class="row">
@@ -780,7 +778,9 @@
 							<button id="submit" type="submit" name="submit" class="btn btn-dark">Send Message</button>
 						</div>
 
-						<!--
+						<div id="form-messages"></div>
+
+
 						<div id="success" class="col-md-12 col-xs-12">
 							<p class="green textcenter">Your message was send, Thank you.</p>
 						</div>
@@ -788,10 +788,36 @@
 						<div id="error" class="col-md-12 col-xs-12">
 							<p>Something maybe wrong please try again</p>
 						</div>
-					-->
+
 
 					</form>
 				</div>
+			-->
+
+			<div id="form-messages"></div>
+
+		<form id="ajax-contact" method="post" action="mailer.php">
+			<div class="field">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+
+			<div class="field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="field">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+			</div>
+
+			<div class="field">
+				<button type="submit">Send</button>
+			</div>
+		</form>
+	</div>
+
 			</div>
 		</div>
 	</section>
@@ -852,7 +878,7 @@
 
 
 	<!-- JS PLUGIN -->
-	<script src="assets/js/jquery-2.1.0.min.js"></script>
+	<script src="jquery-2.1.0.min.js"></script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.stellar.min.js"></script>
