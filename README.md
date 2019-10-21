@@ -4,7 +4,7 @@
 
 ### Version 2.0
 
-### https://prateeksawhney.me/
+### https://prateeksawhney97.me/
 
 ### Screenshots
 
